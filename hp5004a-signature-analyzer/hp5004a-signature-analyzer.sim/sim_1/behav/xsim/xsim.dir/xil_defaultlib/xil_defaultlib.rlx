@@ -1,0 +1,16 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/core/edge_selecter.vhd,1778188678,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,edge_selecter,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/core/prescalar.vhd,1778188711,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,prescalar,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/core/register.vhd,1778188250,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,buff_register,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/gate_gen/gate_gen.vhd,1778189471,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,gate_gen,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/hp5004a_lfsr/hp5004a_lfsr.vhd,1778190566,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,hp5004a_lfsr,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/decoder_2_to_4.vhd,1778189708,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/multiplexed_display.vhd,,,decoder_2_to_4,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/digit_counter.vhd,1778189433,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/multiplexed_display.vhd,,,digit_counter,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/funnyhex_seven.vhd,1778118558,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/multiplexed_display.vhd,,,funnyhex_seven,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/multiplexed_display.vhd,1778189245,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,,,multiplexed_display,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/mux_4_to_1.vhd,1778118743,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/multiplexed_display/multiplexed_display.vhd,,,mux_4_to_1,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd,1778190551,vhdl,C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/tb/hp5004a_TB.vhd,,,hp5004a,,,,,,,,
+C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/tb/hp5004a_TB.vhd,1778189622,vhdl,,,,hp5004a_tb,,,,,,,,

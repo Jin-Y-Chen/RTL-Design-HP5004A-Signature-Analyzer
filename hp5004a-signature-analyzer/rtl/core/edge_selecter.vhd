@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity edge_detecter is
+entity edge_selecter is
     port (
         clk         : in  std_logic;
         rst_bar     : in  std_logic;
@@ -11,7 +11,7 @@ entity edge_detecter is
     );
 end entity;
 
-architecture behavioral of edge_detecter is
+architecture behavioral of edge_selecter is
     signal now_sig : std_logic;
     signal pre_sig : std_logic;
 begin

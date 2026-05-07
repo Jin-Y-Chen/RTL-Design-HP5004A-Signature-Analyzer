@@ -22,7 +22,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 
-entity Multiplexed_Display is
+entity multiplexed_display is
 	port( 
 	clk : in std_logic; 
 	rst_bar : in std_logic;
@@ -34,7 +34,7 @@ entity Multiplexed_Display is
 
 end entity;	
 
-architecture structural of Multiplexed_Display is  
+architecture structural of multiplexed_display is  
 signal sel : std_logic_vector(1 downto 0);
 signal out_vector : std_logic_vector(3 downto 0);
 begin  	

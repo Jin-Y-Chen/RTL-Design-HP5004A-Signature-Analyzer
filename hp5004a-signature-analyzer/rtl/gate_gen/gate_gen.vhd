@@ -34,21 +34,23 @@ end entity;
 
 architecture fsm of gate_gen is
     type state_type is (IDLE, GATE_H, GATE_L);
-    signal state, next_state : state_type;
+    signal curr_state, next_state : state_type;
 begin 
 
     state : process(clk)
     begin
         if rising_edge(clk) then
-            state <= IDLE;
-        else
-            state <= next_state;
+            if rst_bar = '0' then
+                curr_state <= IDLE;
+            else
+                curr_state <= next_state;
+            end if;
         end if;
     end process;
 
-    transition : process(state, start, stop)
+    transition : process(curr_state, start, stop)
     begin
-        case state is
+        case curr_state is
             when IDLE =>
                 if start = '1' then
                     next_state <= GATE_H;
@@ -68,9 +70,12 @@ begin
         end case;
     end process;
 
-    output_logic : process(state)
+    output_logic : process(curr_state)
     begin
-        case state is
+        gate_out <= '0';
+        reg_en <= '0';
+                
+        case curr_state is
             when IDLE =>
                 gate_out <= '0';
                 reg_en <= '0';

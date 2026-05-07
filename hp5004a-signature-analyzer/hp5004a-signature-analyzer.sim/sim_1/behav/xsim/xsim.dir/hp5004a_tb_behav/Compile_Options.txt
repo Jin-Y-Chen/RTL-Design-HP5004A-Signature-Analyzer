@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "hp5004a_tb_behav" "xil_defaultlib.hp5004a_tb" -log "elaborate.log" 

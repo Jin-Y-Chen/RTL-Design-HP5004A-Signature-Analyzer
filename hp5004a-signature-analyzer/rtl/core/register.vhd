@@ -21,17 +21,17 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity register is
+entity buff_register is
     port (
     clk : in std_logic;
     rst_bar : in std_logic;
     enable : in std_logic;
     data_in : in std_logic_vector(15 downto 0);
-    data_out : out std_logic_vector(15 downto 0);
+    data_out : out std_logic_vector(15 downto 0)
     );
 end entity;
 
-architecture behavioral of register is
+architecture behavioral of buff_register is
     signal reg : std_logic_vector(15 downto 0);
 begin
     main: process(clk)    

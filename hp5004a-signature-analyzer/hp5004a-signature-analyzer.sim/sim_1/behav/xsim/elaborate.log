@@ -1,0 +1,27 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/FPGA/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot hp5004a_tb_behav xil_defaultlib.hp5004a_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.edge_selecter [edge_selecter_default]
+Compiling architecture fsm of entity xil_defaultlib.gate_gen [gate_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.hp5004a_lfsr [hp5004a_lfsr_default]
+Compiling architecture behavioral of entity xil_defaultlib.buff_register [buff_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.prescalar [prescalar_default]
+Compiling architecture dataflow of entity xil_defaultlib.mux_4_to_1 [mux_4_to_1_default]
+Compiling architecture dataflow of entity xil_defaultlib.funnyhex_seven [funnyhex_seven_default]
+Compiling architecture dataflow of entity xil_defaultlib.decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.digit_counter [digit_counter_default]
+Compiling architecture structural of entity xil_defaultlib.multiplexed_display [multiplexed_display_default]
+Compiling architecture structural of entity xil_defaultlib.hp5004a [hp5004a_default]
+Compiling architecture tb_architecture of entity xil_defaultlib.hp5004a_tb
+Built simulation snapshot hp5004a_tb_behav

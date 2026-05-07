@@ -24,7 +24,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all; 
 use work.all;
 
-entity hp5004a_SA_w_display is
+entity hp5004a is
     port (
         clk      : in  std_logic;                    
         rst_bar  : in  std_logic;                      
@@ -41,11 +41,11 @@ entity hp5004a_SA_w_display is
 
 end entity;
  
-architecture structural of hp5004a_SA_w_display is
+architecture structural of hp5004a is
 	signal data_in, data_out : std_logic_vector(15 downto 0);
     signal stop_edge, start_edge, clock_edge : std_logic;
     signal gate, reg_en : std_logic;
-	constant U : time :=10ns;
+    signal pout : std_logic;
  
 begin
  
@@ -87,8 +87,9 @@ begin
 
     U1: entity work.hp5004a_lfsr
         port map (
-            clk     => clock_edge,
+            clk     => clk,
             rst_bar => rst_bar,
+            enable  => clock_edge,
             gate    => gate,
             clear   => reg_en,
             data    => data,
@@ -96,7 +97,7 @@ begin
             sig_out => data_in
         );
  
-    U2: entity work.register
+    U2: entity work.buff_register
         port map (
             clk         => clk,
             rst_bar     => rst_bar,

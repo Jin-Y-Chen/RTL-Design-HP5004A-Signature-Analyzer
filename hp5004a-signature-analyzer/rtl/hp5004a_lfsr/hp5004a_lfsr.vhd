@@ -26,8 +26,9 @@ entity hp5004a_lfsr is
 	port (
 	clk   	: in std_logic;
 	rst_bar : in std_logic;
+	enable  : in std_logic;
 	gate   	: in std_logic;
-	clear  : in std_logic;
+	clear   : in std_logic;
 	data    : in std_logic;
 	sig_out : out std_logic_vector(15 downto 0)
 	);
@@ -44,14 +45,14 @@ begin
         if rising_edge(clk) then
             if rst_bar = '0' or clear = '1' then
                 lfsr_reg <= (others => '0');
+
+            elsif gate = '1' and enable = '1' then	  
 				
-            elsif gate = '1' then	  
-				
-				feedback := lfsr_reg(15) xor 
+				feedback := (lfsr_reg(15) xor 
 							lfsr_reg(11) xor 
 							lfsr_reg(8) xor 
-							lfsr_reg(6) xor 
-							data_in;
+							lfsr_reg(6)) xor 
+							data;
 
                 lfsr_reg <= lfsr_reg(14 downto 0) & feedback;              
  
