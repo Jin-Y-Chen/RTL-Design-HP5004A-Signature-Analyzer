@@ -1,9 +1,8 @@
-!hp5004a-signature-analyzer/hp5004a-signature-analyzer.srcs/
-hp5004a-signature-analyzer/hp5004a-signature-analyzer.xpr
 ###############################
 # Vivado/FPGA Project .gitignore
 ###############################
-# Vivado generated files and folders
+
+# Ignore Vivado and tool-generated files
 .Xil/
 *.jou
 *.log
@@ -30,6 +29,10 @@ hp5004a-signature-analyzer/hp5004a-signature-analyzer.xpr
 *.vivado.wdb
 *.vitis*
 
+# Ignore project files you do not want tracked
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.xpr
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.srcs/utils_1/imports/synth_1/hp5004a.dcp
+
 # Simulation output
 *.vcd
 *.wlf
@@ -44,11 +47,9 @@ Desktop.ini
 *.swp
 *.swo
 *.bak
-*.tmp
 *.user
-*.log
 
-# Ignore all but source and project files
+# Only track source and documentation files
 !*.vhd
 !*.vhdl
 !*.v
