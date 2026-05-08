@@ -1,0 +1,76 @@
+###############################
+# Vivado/FPGA Project .gitignore
+###############################
+# Vivado generated files and folders
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.xml
+*.html
+*.ltx
+*.xpr.cache/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.hw/
+*.webtalk/
+*.cache/
+*.data/
+*.tmp
+*.backup
+*.restore
+*.xsim/
+*.vivado.log
+*.vivado.jou
+*.vivado.wdb
+*.vitis*
+
+# Simulation output
+*.vcd
+*.wlf
+*.asdb
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# User-specific files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.user
+*.log
+
+# Ignore all but source and project files
+!*.vhd
+!*.vhdl
+!*.v
+!*.sv
+!*.xdc
+!*.tcl
+!*.xpr
+!*.xci
+!*.xco
+!*.prj
+!*.bit
+!*.mcs
+!*.bin
+!*.ucf
+!*.sdc
+!*.csv
+!*.md
+!*.txt
+!*.pdf
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*.rst
+!*.ipynb
+!*.gitignore

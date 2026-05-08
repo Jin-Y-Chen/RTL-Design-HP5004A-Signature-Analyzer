@@ -91,7 +91,7 @@ begin
             rst_bar => rst_bar,
             enable  => clock_edge,
             gate    => gate,
-            clear   => reg_en,
+            clear   => reg_en, 
             data    => data,
 
             sig_out => data_in
