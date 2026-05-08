@@ -1,3 +1,21 @@
+###############################
+# Vivado/FPGA Project .gitignore
+###############################
+# Ignore Vivado and tool-generated files
+.Xil/
+# Simulation output
+*.vcd
+# OS generated files
+Thumbs.db
+# User-specific files
+*.swp
+# Ignore intermediate scripts and batch files
+*.sh
+# Only track source, documentation, and bitstream files
+!*.vhd
+# Do not ignore these project folders
+!hp5004a-signature-analyzer/hp5004a-signature-analyzer.sim/
+!hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/
 !hp5004a-signature-analyzer/hp5004a-signature-analyzer.sim/
 !hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/
 ###############################
@@ -16,7 +34,6 @@
 *.html
 *.ltx
 *.xpr.cache/
-*.runs/
 *.sim/
 *.ip_user_files/
 *.hw/
