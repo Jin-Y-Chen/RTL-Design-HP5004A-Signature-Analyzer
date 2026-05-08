@@ -40,24 +40,16 @@ begin
             if rst_bar = '0' then
                 count <= (others => '0');
             else
-                count <= count + 1;
+                    if count = to_unsigned(9999, 14) then
+                        count <= (others => '0');
+                    else
+                        count <= count + 1;
+                    end if;
             end if;
         end if;
     end process;
     
-    pout <= count(13) and 
-            not count(12) and 
-            not count(11) and 
-            count(10) and 
-            count(9) and 
-            count(8) and 
-            not count(7) and 
-            not count(6) and 
-            not count(5) and 
-            not count(4) and 
-            count(3) and 
-            count(2) and 
-            count(1) and 
-            count(0); -- Output the at 10,000th clock cycle (when count = 9999)
+    -- Generate a single clock pulse when count reaches 9999
+    pout <= '1' when count = to_unsigned(9999, 14) else '0';
     
 end architecture;
