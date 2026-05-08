@@ -33,10 +33,10 @@ architecture dataflow of decoder_2_to_4 is
 begin  
 	
 	digit_driver <=
-	    "0001" when std_logic_vector'(s1 & s0) = "00" else
-	    "0010" when std_logic_vector'(s1 & s0) = "01" else
-	    "0100" when std_logic_vector'(s1 & s0) = "10" else
-	    "1000" when std_logic_vector'(s1 & s0) = "11" else
-	    "0000";
+	    not "0001" when std_logic_vector'(s1 & s0) = "00" else
+	    not "0010" when std_logic_vector'(s1 & s0) = "01" else
+	    not "0100" when std_logic_vector'(s1 & s0) = "10" else
+	    not "1000" when std_logic_vector'(s1 & s0) = "11" else
+	    not "0000";
 	
 end architecture;

@@ -112,6 +112,7 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param dlyest.enablePhysicalLayerCollector 0
   set_param synth.incrementalSynthesisCache C:/Users/Jin/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-22980-DESKTOP-CQ5O7VM/incrSyn
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint hp5004a_routed.dcp
   set_property webtalk.parent_dir {C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/hp5004a-signature-analyzer.cache/wt} [current_project]
