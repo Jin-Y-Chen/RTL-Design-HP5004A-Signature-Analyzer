@@ -10,18 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4.152000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="9.617000001 ms"></ZoomEndTime>
-      <Cursor1Time time="7.500375000 ms"></Cursor1Time>
+      <ZoomStartTime time="0.050367834 ms"></ZoomStartTime>
+      <ZoomEndTime time="0.051910835 ms"></ZoomEndTime>
+      <Cursor1Time time="0.050625000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="148"></NameColumnWidth>
       <ValueColumnWidth column_width="137"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="18" />
-   <wave_markers>
-      <marker time="5000375000" label="" />
-   </wave_markers>
    <wvobject fp_name="/hp5004a_tb/starte" type="logic">
       <obj_property name="ElementShortName">starte</obj_property>
       <obj_property name="ObjectShortName">starte</obj_property>
@@ -93,32 +90,33 @@
    <wvobject fp_name="/hp5004a_tb/uut/U2/data_in" type="array">
       <obj_property name="ElementShortName">data_in[15:0]</obj_property>
       <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
-      <obj_property name="CustomSignalColor">#808080</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/hp5004a_tb/uut/U2/data_out" type="array">
       <obj_property name="ElementShortName">data_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
-      <obj_property name="CustomSignalColor">#808080</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/hp5004a_tb/segs" type="array">
       <obj_property name="ElementShortName">segs[6:0]</obj_property>
       <obj_property name="ObjectShortName">segs[6:0]</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/hp5004a_tb/uut/U3A/count" type="array">
       <obj_property name="ElementShortName">count[13:0]</obj_property>
       <obj_property name="ObjectShortName">count[13:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="/hp5004a_tb/uut/U3A/pout" type="logic">
       <obj_property name="ElementShortName">pout</obj_property>
       <obj_property name="ObjectShortName">pout</obj_property>
-      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/hp5004a_tb/digs" type="array">
@@ -126,5 +124,7 @@
       <obj_property name="ObjectShortName">digs[3:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
 </wave_config>
