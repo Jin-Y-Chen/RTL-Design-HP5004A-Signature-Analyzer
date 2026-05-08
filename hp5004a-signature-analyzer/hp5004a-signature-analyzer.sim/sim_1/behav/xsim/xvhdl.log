@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/hp5004a.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'hp5004a'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jin/Documents/Github Repo/FPGA-System-Design/hp5004a-signature-analyzer/rtl/top/tb/hp5004a_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'hp5004a_tb'
