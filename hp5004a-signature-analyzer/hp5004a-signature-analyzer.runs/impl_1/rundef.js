@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
          "-log hp5004a.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source hp5004a.tcl -notrace" );
 
