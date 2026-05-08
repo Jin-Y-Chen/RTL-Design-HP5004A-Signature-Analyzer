@@ -110,6 +110,7 @@ set rc [catch {
   set_param general.usePosixSpawnForFork 1
   set_param chipscope.maxJobs 4
   set_param synth.incrementalSynthesisCache C:/Users/Jin/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16372-DESKTOP-CQ5O7VM/incrSyn
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1

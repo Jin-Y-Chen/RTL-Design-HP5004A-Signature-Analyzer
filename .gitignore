@@ -1,3 +1,94 @@
+###############################
+# Vivado/FPGA Project .gitignore (Final)
+###############################
+
+# Ignore Vivado tool-generated folders
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.cache/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.hw/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.ip_user_files/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.sim/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.srcs/utils_1/imports/synth_1/
+
+# Ignore specific subfolders
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/synth_1/
+hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/.jobs/
+
+# Ignore Vivado and tool-generated files
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.dcp
+*.xml
+*.html
+*.ltx
+*.xpr.cache/
+*.ip_user_files/
+*.hw/
+*.webtalk/
+*.cache/
+*.data/
+*.tmp
+*.backup
+*.restore
+*.xsim/
+*.vivado.log
+*.vivado.jou
+*.vivado.wdb
+*.vitis*
+
+# Simulation output
+*.vcd
+*.wlf
+*.asdb
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# User-specific files
+*.swp
+*.swo
+*.bak
+*.user
+
+# Ignore intermediate scripts and batch files
+*.sh
+*.bat
+*.js
+
+# Only track source, documentation, and bitstream files
+!*.vhd
+!*.vhdl
+!*.v
+!*.sv
+!*.xdc
+!*.tcl
+!*.xpr
+!*.xci
+!*.xco
+!*.prj
+!*.bit
+!*.mcs
+!*.bin
+!*.ucf
+!*.sdc
+!*.csv
+!*.md
+!*.txt
+!*.pdf
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*.rst
+!*.ipynb
+!*.gitignore
 hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/.jobs/
 hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/synth_1/
 ###############################
@@ -16,10 +107,8 @@ Thumbs.db
 # Only track source, documentation, and bitstream files
 !*.vhd
 # Do not ignore these project folders
-!hp5004a-signature-analyzer/hp5004a-signature-analyzer.sim/
 !hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/
-!hp5004a-signature-analyzer/hp5004a-signature-analyzer.sim/
-!hp5004a-signature-analyzer/hp5004a-signature-analyzer.runs/
+
 ###############################
 # Vivado/FPGA Project .gitignore
 ###############################
@@ -30,6 +119,9 @@ Thumbs.db
 *.log
 *.str
 *.wdb
+*.rpt
+*.tcl
+*.vds
 *.pb
 *.dcp
 *.xml
@@ -73,18 +165,8 @@ Desktop.ini
 !*.v
 !*.sv
 !*.xdc
-!*.tcl
-!*.xpr
-!*.xci
-!*.xco
-!*.prj
 !*.bit
-!*.mcs
-!*.bin
-!*.ucf
-!*.sdc
 !*.csv
-!*.md
 !*.txt
 !*.pdf
 !*.png
@@ -92,6 +174,4 @@ Desktop.ini
 !*.jpeg
 !*.gif
 !*.svg
-!*.rst
-!*.ipynb
 !*.gitignore
