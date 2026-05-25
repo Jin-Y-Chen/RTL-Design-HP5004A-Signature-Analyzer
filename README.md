@@ -12,6 +12,12 @@
 </div>
 
 ---
+<p align="center">
+  <img src="docs/images/RTL_Diagram.png" alt="RTL_Diagram" style="max-width:100%; height:auto;"/>
+</p>
+<p align="center">
+  <em>Figure 1:.</em>
+</p>
 
 ## Overview
 
