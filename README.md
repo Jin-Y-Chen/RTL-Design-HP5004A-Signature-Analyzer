@@ -2,10 +2,10 @@
 
 <div align="center">
 
-[![VHDL](https://img.shields.io/badge/VHDL-RTL-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/VHDL)
-[![Artix-7](https://img.shields.io/badge/Artix--7-FPGA-red?style=for-the-badge)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
-[![Basys3](https://img.shields.io/badge/Basys3-Development_Board-green?style=for-the-badge)](https://digilent.com/reference/programmable-logic/basys-3/start)
-[![Vivado](https://img.shields.io/badge/Vivado-Design_Suite-orange?style=for-the-badge)](https://www.xilinx.com/products/design-tools/vivado.html)
+[![HDL - VHDL](https://img.shields.io/badge/HDL-VHDL-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/VHDL)
+[![FPGA - Artix-7](https://img.shields.io/badge/FPGA-Artix--7-red?style=for-the-badge)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
+[![Board - Basys3](https://img.shields.io/badge/Board-Basys3-green?style=for-the-badge)](https://digilent.com/reference/programmable-logic/basys-3/start)
+[![Tool - Vivado](https://img.shields.io/badge/Tool-Vivado-orange?style=for-the-badge)](https://www.xilinx.com/products/design-tools/vivado.html)
 
 **May 2026 | Jin Yuan Chen**
 
