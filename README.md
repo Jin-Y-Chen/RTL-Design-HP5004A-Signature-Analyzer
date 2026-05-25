@@ -19,15 +19,6 @@
 
 ### HP 5004A Signature Analyzer
 
-<div align="center">
-
-| | |
-|:---:|:---:|
-| <img src="hp5004_full.jpg" alt="HP 5004A Instrument" width="380"/> | <img src="hp5004_fpga.jpg" alt="FPGA Implementation" width="380"/> |
-| *Original HP 5004A Signature Analyzer* | *Basys3 FPGA Implementation* |
-
-</div>
-
 An FPGA-based digital replica of the **HP 5004A Signature Analyzer** — a classic test instrument used in field-level digital circuit debugging. The design computes a 16-bit signature of a serial data stream captured between configurable **START** and **STOP** boundary conditions, then displays the result as a 4-digit hexadecimal value on the Basys3 on-board 7-segment display.
 
 ---
