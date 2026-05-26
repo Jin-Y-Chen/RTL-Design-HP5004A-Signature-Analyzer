@@ -13,7 +13,7 @@
 
 ---
 <p align="center">
-  <img src="docs/images/RTL_Diagram.png" alt="RTL_Diagram" style="max-width:100%; height:auto;"/>
+  <img src="docs/diagrams/RTL_Diagram.png" alt="RTL_Diagram" style="max-width:100%; height:auto;"/>
 </p>
 <p align="center">
   <em>Figure 1:.</em>
@@ -28,7 +28,7 @@ An FPGA-based digital replica of the **HP 5004A Signature Analyzer** — a class
 ## Architecture
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/src/multiplexed_display/block_diagram.png" alt="Block Diagram" style="max-width:80%; height:auto;"/>
+<img src="docs/diagrams/block_diagram.png" alt="Block Diagram" style="max-width:80%; height:auto;"/>
 </div>
 
 The design is a fully structural VHDL hierarchy composed of six functional blocks:
@@ -62,12 +62,12 @@ Controls the LFSR acquisition window via a 3-state Moore FSM:
 | `GATE_L` | `0` | `1` | STOP edge received — latch result |
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/waveform/fsm_IDLE_GATE_H.png" alt="FSM IDLE to GATE_H" width="600"/>
+<img src="sim/waveforms/fsm_IDLE_GATE_H.png" alt="FSM IDLE to GATE_H" width="600"/>
 <br/><em>Figure 1: FSM transition waveform — IDLE → GATE_H on START edge</em>
 </div>
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/waveform/fsm_GATE_H_L.png" alt="FSM GATE_H to GATE_L" width="600"/>
+<img src="sim/waveforms/fsm_GATE_H_L.png" alt="FSM GATE_H to GATE_L" width="600"/>
 <br/><em>Figure 2: FSM transition waveform — GATE_H → GATE_L on STOP edge (reg_en pulse)</em>
 </div>
 
@@ -95,7 +95,7 @@ feedback = lfsr[15] XOR lfsr[11] XOR lfsr[8] XOR lfsr[6] XOR data
 The register clears on reset or when `reg_en` is asserted (new acquisition cycle).
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/waveform/lfsr_data_wave.png" alt="LFSR Waveform" width="600"/>
+<img src="sim/waveforms/lfsr_data_wave.png" alt="LFSR Waveform" width="600"/>
 <br/><em>Figure 3: LFSR accumulation waveform during active gate window</em>
 </div>
 
@@ -106,7 +106,7 @@ The register clears on reset or when `reg_en` is asserted (new acquisition cycle
 A 16-bit register that latches the LFSR state on the falling edge of the gate window (`reg_en` pulse). Holds the computed signature stable for display until the next acquisition cycle.
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/waveform/buff_register_wave.png" alt="Buffer Register Waveform" width="600"/>
+<img src="sim/waveforms/buff_register_wave.png" alt="Buffer Register Waveform" width="600"/>
 <br/><em>Figure 4: Buffer register latching the 16-bit signature on reg_en</em>
 </div>
 
@@ -124,7 +124,7 @@ Displays the 16-bit signature as four hex digits on the Basys3 7-segment display
 | `F` | U | | |
 
 <div align="center">
-<img src="hp5004a-signature-analyzer/waveform/prescaled_digs_wave.png" alt="Prescaled Display Waveform" width="600"/>
+<img src="sim/waveforms/prescaled_digs_wave.png" alt="Prescaled Display Waveform" width="600"/>
 <br/><em>Figure 5: Prescaled display digit scan waveform</em>
 </div>
 
@@ -145,37 +145,6 @@ Displays the 16-bit signature as four hex digits on the Basys3 7-segment display
 | `data` | G2 | Pmod JB pin 4 |
 | `segs[6:0]` | W7–U7 | 7-segment segments |
 | `digs[3:0]` | U2–W4 | 7-segment digit anodes |
-
----
-
-## Source Structure
-
-```
-hp5004a-signature-analyzer/
-├── src/
-│   ├── top/
-│   │   ├── hp5004a.vhd             # Top-level structural entity
-│   │   └── tb/
-│   │       └── hp5004a_TB.vhd      # Behavioral testbench
-│   ├── core/
-│   │   ├── edge_selecter.vhd
-│   │   ├── prescalar.vhd
-│   │   └── register.vhd
-│   ├── gate_gen/
-│   │   └── gate_gen.vhd
-│   ├── hp5004a_lfsr/
-│   │   └── hp5004a_lfsr.vhd
-│   └── multiplexed_display/
-│       ├── multiplexed_display.vhd
-│       ├── mux_4_to_1.vhd
-│       ├── funnyhex_seven.vhd
-│       ├── decoder_2_to_4.vhd
-│       └── digit_counter.vhd
-├── pin_assign.xdc                  # Vivado constraint file
-├── waveform/                       # Simulation waveform screenshots
-├── diagram/                        # Schematic PDF
-└── hp5004a.bit                     # Compiled bitstream
-```
 
 ---
 
@@ -200,5 +169,5 @@ Each cycle asserts START, shifts 16 bits of data synchronous to the DUT clock, t
 | `Artix7_FPGAs_data_sheet.pdf` | Artix-7 FPGA datasheet |
 | `basys3_board_reference.pdf` | Basys3 board reference manual |
 | `diagram/schematic.pdf` | HP 5004A circuit schematic reference |
-| `Lab10s26`–`Lab12s26` PDFs | Lab specifications (I, II, III) |
+| `spec_signature_analyzer I, II, & III` PDFs | Lab specifications (I, II, III) |
 | Xilinx Vivado | Synthesis, implementation, bitstream generation |
