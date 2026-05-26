@@ -31,10 +31,6 @@ The design emphasizes structural VHDL, deterministic timing behavior, and clear 
 
 ## Architecture
 
-<div align="center">
-<img src="docs/diagrams/block_diagram.png" alt="Block Diagram" style="max-width:80%; height:auto;"/>
-</div>
-
 The design is a fully structural VHDL hierarchy composed of six functional blocks:
 
 ```
