@@ -1,5 +1,5 @@
 # RTL-Design-HP5004A-Signature-Analyzer
-HP 5004A signature analyzer recreated on Basys3 FPGA with gated capture, 16-bit LFSR signatures, and live hex display.
+**HP 5004A signature analyzer recreated on Basys3 FPGA with gated capture, 16-bit LFSR signatures, and live hex display.**
 
 <div align="center">
 
@@ -17,7 +17,7 @@ HP 5004A signature analyzer recreated on Basys3 FPGA with gated capture, 16-bit 
   <img src="docs/diagrams/RTL_Diagram.png" alt="RTL_Diagram" style="max-width:100%; height:auto;"/>
 </p>
 <p align="center">
-  <em>Figure 1:.</em>
+  <em>Figure 1: Structural RTL diagram of the HP 5004A signature analyzer, showing the edge detectors, gate controller, LFSR signature engine, capture register, and 7-segment display path.</em>
 </p>
 
 ## Overview
