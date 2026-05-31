@@ -107,7 +107,7 @@ A 16-bit register that latches the LFSR state on the falling edge of the gate wi
 
 <div align="center">
 <img src="sim/waveforms/buff_register_wave.png" alt="Buffer Register Waveform" width="1000"/>
-<br/><em>Figure 4: Buffer register latching the 16-bit signature on reg_en</em>
+<br/><em>Figure 4: Buffer register latching the 16-bit signature (0x814A) on reg_en</em>
 </div>
 
 ---
@@ -165,7 +165,7 @@ Each cycle asserts START, shifts 16 bits of data synchronous to the DUT clock, t
 ## Place and Route
 
 <div align="center">
-<img src="docs/images/hp5004a_full.jpg" alt="Prescaled Display Waveform" width="600"/>
+<img src="docs/images/hp5004a_full.jpg" alt="Prescaled Display Waveform" width="1000"/>
 <br/><em>Figure 6: Placed and Routed on the Artix-7 with pre-determined signal generated input</em>
 </div>
 
