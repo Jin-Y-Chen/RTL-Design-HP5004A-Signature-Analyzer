@@ -130,6 +130,20 @@ Displays the 16-bit signature as four hex digits on the Basys3 7-segment display
 
 ---
 
+## Simulation
+
+The testbench (`hp5004a_TB.vhd`) drives a 16-bit data stream through four repeated acquisition cycles using:
+
+| Parameter | Value |
+|-----------|-------|
+| System clock period | 250 ns (4 MHz) |
+| DUT clock period | 2.5 µs (400 kHz) |
+| Test data stream | Configurable `std_logic_vector(15 downto 0)` |
+
+Each cycle asserts START, shifts 16 bits of data synchronous to the DUT clock, then asserts STOP — verifying the full FSM → LFSR → register → display pipeline.
+
+---
+
 ## Pin Assignment (Basys3)
 
 | Signal | Pin | Source |
@@ -148,24 +162,11 @@ Displays the 16-bit signature as four hex digits on the Basys3 7-segment display
 
 ---
 
-## Simulation
-
-The testbench (`hp5004a_TB.vhd`) drives a 16-bit data stream through four repeated acquisition cycles using:
-
-| Parameter | Value |
-|-----------|-------|
-| System clock period | 250 ns (4 MHz) |
-| DUT clock period | 2.5 µs (400 kHz) |
-| Test data stream | Configurable `std_logic_vector(15 downto 0)` |
-
-Each cycle asserts START, shifts 16 bits of data synchronous to the DUT clock, then asserts STOP — verifying the full FSM → LFSR → register → display pipeline.
-
----
 
 ## Place and Route
 
 <div align="center">
-<img src="docs/images/hp5004a_full.jpg" alt="Prescaled Display Waveform" width="1000"/>
+<img src="docs/images/hp5004a_full.jng" alt="Prescaled Display Waveform" width="1000"/>
 <br/><em>Figure 6: Placed and Routed on the Artix-7 with pre-determined signal generated input</em>
 </div>
 
