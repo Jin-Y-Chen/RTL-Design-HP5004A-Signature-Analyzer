@@ -95,7 +95,7 @@ feedback = lfsr[15] XOR lfsr[11] XOR lfsr[8] XOR lfsr[6] XOR data
 The register clears on reset or when `reg_en` is asserted (new acquisition cycle).
 
 <div align="center">
-<img src="sim/waveforms/lfsr_data_wave.png" alt="LFSR Waveform" width="600"/>
+<img src="sim/waveforms/lfsr_data_wave.png" alt="LFSR Waveform" width="1000"/>
 <br/><em>Figure 3: LFSR accumulation waveform during active gate window</em>
 </div>
 
@@ -106,7 +106,7 @@ The register clears on reset or when `reg_en` is asserted (new acquisition cycle
 A 16-bit register that latches the LFSR state on the falling edge of the gate window (`reg_en` pulse). Holds the computed signature stable for display until the next acquisition cycle.
 
 <div align="center">
-<img src="sim/waveforms/buff_register_wave.png" alt="Buffer Register Waveform" width="600"/>
+<img src="sim/waveforms/buff_register_wave.png" alt="Buffer Register Waveform" width="1000"/>
 <br/><em>Figure 4: Buffer register latching the 16-bit signature on reg_en</em>
 </div>
 
@@ -124,7 +124,7 @@ Displays the 16-bit signature as four hex digits on the Basys3 7-segment display
 | `F` | U | | |
 
 <div align="center">
-<img src="sim/waveforms/prescaled_digs_wave.png" alt="Prescaled Display Waveform" width="600"/>
+<img src="sim/waveforms/prescaled_digs_wave.png" alt="Prescaled Display Waveform" width="1000"/>
 <br/><em>Figure 5: Prescaled display digit scan waveform</em>
 </div>
 
@@ -166,7 +166,7 @@ Each cycle asserts START, shifts 16 bits of data synchronous to the DUT clock, t
 
 <div align="center">
 <img src="docs/images/hp5004a_full.jpg" alt="Prescaled Display Waveform" width="600"/>
-<br/><em>Figure 5: Prescaled display digit scan waveform</em>
+<br/><em>Figure 6: Placed and Routed on the Artix-7 with pre-determined signal generated input</em>
 </div>
 
 
